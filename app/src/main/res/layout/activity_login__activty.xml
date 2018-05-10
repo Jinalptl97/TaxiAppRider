@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/registrationbg"
+    tools:context=".Activity.Login_Activty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/logolayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/_170dp"
+                android:layout_height="@dimen/_120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/registration_car" />
+
+
+            <com.taxibookingrider.Controller.Tahoma
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_18_sp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_25dp"
+            android:layout_marginRight="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_70dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/edemailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/Black"
+                    android:hint="@string/email_id"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:textColor="@color/dark_text"
+                    android:textColorHint="@color/dark_text"
+                    android:textSize="@dimen/_15_sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <ImageView
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_10dp"
+                android:src="@drawable/firstname" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/edit22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_25dp"
+            android:layout_marginRight="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_10dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/edpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/Black"
+                    android:hint="@string/password"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:textColor="@color/dark_text"
+                    android:textColorHint="@color/dark_text"
+                    android:textSize="@dimen/_15_sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <ImageView
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_10dp"
+                android:src="@drawable/otp_password" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/loginlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_below="@+id/edit22"
+            android:layout_marginLeft="@dimen/_25dp"
+            android:layout_marginRight="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:elevation="@dimen/_3dp"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+
+            <com.taxibookingrider.Controller.Tahoma
+                android:id="@+id/submitlogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/LOGIN"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_18_sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/loginlayout"
+            android:layout_marginTop="@dimen/_10dp"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/_15dp">
+
+
+            <RelativeLayout
+                android:id="@+id/newregistration"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginLeft="@dimen/_50dp"
+                android:layout_marginRight="@dimen/_50dp">
+
+                <com.taxibookingrider.Controller.Tahoma
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7_sp"
+                    android:gravity="center"
+                    android:text="@string/new_registration"
+                    android:textColor="@color/dark_text"
+                    android:textColorHint="@color/dark_text"
+                    android:textSize="@dimen/_15_sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/forgotpassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_below="@+id/newregistration"
+                android:layout_marginLeft="@dimen/_50dp"
+                android:layout_marginRight="@dimen/_50dp"
+                android:layout_marginTop="@dimen/_7dp">
+
+
+                <com.taxibookingrider.Controller.Tahoma
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7_sp"
+                    android:gravity="center"
+                    android:text="@string/Forgot_password"
+                    android:textColor="@color/dark_text"
+                    android:textColorHint="@color/dark_text"
+                    android:textSize="@dimen/_15_sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/skip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_below="@+id/forgotpassword"
+                android:layout_marginLeft="@dimen/_50dp"
+                android:layout_marginRight="@dimen/_50dp"
+                android:layout_marginTop="@dimen/_7dp">
+
+
+                <com.taxibookingrider.Controller.Tahoma
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7_sp"
+                    android:gravity="center"
+                    android:text="@string/skip"
+                    android:textColor="@color/dark_text"
+                    android:textColorHint="@color/dark_text"
+                    android:textSize="@dimen/_15_sp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

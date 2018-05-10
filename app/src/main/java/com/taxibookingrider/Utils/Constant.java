@@ -1,0 +1,87 @@
+package com.taxibookingrider.Utils;
+
+/**
+ * Created by Galaxy on 17-Sep-16.
+ */
+
+public class Constant {
+    public static String constanturl = "http://www.waytoweb.co.in/hindwaybeta/test/getHomeData.php";
+    public static String baseurl = "http://www.waytoweb.co.in/hindwaybeta/test/";
+    public static String baseur_test = "http://hindway.co.in/test/";
+    public static String Prefrence = "Prefrence";
+    public static String USERID = "UserId";
+    public static String REJOINING = "Rejoining";
+    public static String REJOININGDATA = "RejoininGDate";
+    public static String SABID = "Subid";
+    public static String PARENTID = "Parentid";
+    public static String SHOPPING = "SHOPPING";
+    public static String SHOPPINGAMOUNT = "SHOPPINGAMOUNT";
+    public static String SHOPPINGCOUNT = "SHOPPINGCOUNT";
+    public static String PACKEGEDATE = "PACKEGEDATE";
+    public static String PACKEGEID = "PACKAGEID";
+    public static String PACKAGESTATUS = "PACKAGESTATUS";
+    public static String UserName = "userName";
+    public static String PASSWORD = "PASSWORD";
+    public static String NOOFUNITS = "NOOFUNITS";
+    public static String FIRSTNAME = "FIRSTNAME";
+    public static String LASTNAME = "LASTNAME";
+    public static String FATHERNAME = "FATHERNAME";
+    public static String STREET = "STREET";
+    public static String LENDMARK = "LENDMARK";
+    public static String CITY = "CITY";
+    public static String STATE = "STATE";
+    public static String COUNTRYID = "COUNTRYID";
+    public static String POSTCODE = "POSTCODE";
+    public static String UserEmail = "userEmail";
+    public static String Contactno = "Contactno";
+    public static String PHONE = "PHONE";
+    public static String FAXNO = "FAXNO";
+    public static String BIRTHDATE = "BIRTHDATE";
+    public static String GENDER = "GENDER";
+    public static String USERIMAGE = "USERIMAGE";
+    public static String PANCARDNO = "PANCARDNO";
+    public static String BANKNAME = "BANKNAME";
+    public static String BRANCH = "BRANCH";
+    public static String BANKCITY = "BANKCITY";
+    public static String ACCOUNTNO = "ACCOUNTNO";
+    public static String ACCOUNTNAME = "ACCOUNTNAME";
+    public static String BANKSWIFT = "BANKSWIFT";
+    public static String BANKIFSC = "BANKIFSC";
+    public static String NOMINEENAME = "NOMINEENAME";
+    public static String RELATIONSHIP = "RELATIONSHIP";
+    public static String NOMINEEADDRESS = "NOMINEEADDRESS";
+    public static String NOMINEEBIRTHDATE = "NOMINEEBIRTHDATE";
+    public static String SPONSERIDNO = "SPONSERIDNO";
+    public static String BINARYPOSTION = "BINARYPOSTION";
+    public static String BINARYSIDE = "BINARYSIDE";
+    public static String JOININGDATE = "JOININGDATE";
+    public static String CLOSINGGROWTH = "CLOSINGGROWTH";
+    public static String CLOSINGINTRO = "CLOSINGINTRO";
+    public static String STOPPAYMENT = "STOPPAYMENT";
+    public static String USEDPIN = "USEDPIN";
+    public static String MEMBERSHIPNO = "MEMBERSHIPNO";
+    public static String FORMRECEIVED = "FORMRECEIVED";
+    public static String USERTIMESTAMP = "USERTIMESTAMP";
+    public static String PAYMENTMODE = "PAYMENTMODE";
+    public static String PAYMENTDETAILS = "PAYMENTDETAILS";
+    public static String PAYMENTBANK = "PAYMENTBANK";
+    public static String BANKDETAILS = "PAYMENTBANK";
+    public static String PAYRECEIVED = "PAYRECEIVED";
+    public static String ROYALTI = "ROYALTI";
+    public static String ISSAMEASBILLING = "ISSAMEASBILLING";
+    public static String BFIRSTNAME = "BFIRSTNAME";
+    public static String BMIDDLENAME = "BMIDDLENAME";
+    public static String BLASTNAME = "BLASTNAME";
+    public static String BSTREET = "BSTREET";
+    public static String BLENDMARK = "BLENDMARK";
+    public static String BCITY = "BCITY";
+    public static String BSTATE = "BSTATE";
+    public static String BCOUNTYID = "BCOUNTYID";
+    public static String BPOSTCODE = "BPOSTCODE";
+    public static String ESTATUS = "ESTATUS";
+    public static String LOGINID = "LOGINID";
+    public static String CREATEDDATE = "CREATEDATE";
+    public static String UPDATEDDATE = "UPDATEDDATE";
+    public static String LASTLOGIN = "LASTLOGIN";
+    public static String SHIPPINGNOID = "SHIPPINGNOID";
+}

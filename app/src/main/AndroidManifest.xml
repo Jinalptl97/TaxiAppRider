@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taxibookingrider">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.taxibookingrider.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/app_icon_rider"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/app_icon_rider"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.taxibookingrider.Activity.Splash"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7c7198f610bdb4c5b3217e30c4dc3e0c85bbed9c" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api_key" />
+
+        <!-- key used from  API key 1 from SampleMap project in raj.rajput@parshwatechnologies.in account -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.taxibookingrider.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name="com.taxibookingrider.Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.taxibookingrider.Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!--
+             Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting
+        -->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <activity
+            android:name="com.taxibookingrider.Activity.Login_Activty"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.taxibookingrider.Activity.First_Screen"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.taxibookingrider.Activity.OTPscreen" />
+        <activity android:name="com.taxibookingrider.Activity.Password" />
+        <activity android:name="com.taxibookingrider.Activity.Forgot_Password" />
+        <activity android:name="com.taxibookingrider.Activity.Reset_Password" />
+        <activity android:name="com.taxibookingrider.Activity.InsertMapsActivity" />
+        <activity android:name="com.taxibookingrider.Activity.Dashboard" />
+        <activity android:name="com.taxibookingrider.Activity.ResetPasswordOTPscreen" />
+        <activity android:name="com.taxibookingrider.Activity.ChangePasswordOTPscreen" />
+        <activity android:name="com.taxibookingrider.Activity.Change_password_for_newuser" />
+        <activity android:name="com.taxibookingrider.Activity.Registration" />
+        <activity android:name="com.taxibookingrider.Activity.Profile" />
+        <activity android:name="com.taxibookingrider.Activity.UpdateProfileChangeMobileOTPscreen" />
+        <activity android:name="com.taxibookingrider.Activity.Reason_Current_trip" />
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity android:name="com.taxibookingrider.Activity.Chat_Activity" />
+        <activity android:name="com.taxibookingrider.Activity.LiveTripActivity"></activity>
+        <activity android:name="com.taxibookingrider.Activity.DriverList" />
+        <activity android:name="com.taxibookingrider.Activity.Payment" />
+        <activity
+            android:name="com.taxibookingrider.Activity.Ride_rating"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.taxibookingrider.Controller.SuperDialog"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name="com.taxibookingrider.Activity.Trip_Detail" />
+        <activity android:name="com.taxibookingrider.Fragment.ChangePasswordUpdateprofileold" />
+        <activity android:name="com.taxibookingrider.Fragment.EnterPasswordUpdateprofile" />
+
+
+
+        <activity
+            android:name="com.taxibookingrider.Activity.DriverListDemo"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.taxibookingrider.Activity.Current_tripDemo"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <service android:name="com.taxibookingrider.Controller.DialogService"></service>
+    </application>
+
+</manifest>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffc107</color>
+    <color name="colorPrimaryDark">#f1ae07</color>
+    <color name="colorAccent">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+
+    <color name="Red">#eb2629</color>
+    <color name="menu_seperate">#e1e1e1</color>
+    <color name="exp_bg">#E7E7E5</color>
+    <color name="search_bg">#edecec</color>
+    <color name="Menu_type_text">#8e8b8b</color>
+    <color name="silver">#cccccc</color>
+    <color name="my_order_bg">#EBEBEB</color>
+    <color name="white_tranparent">#95FFFFFF</color>
+    <color name="white_tranparent_dark">#95FFFFFF</color>
+    <color name="dashboard_white_tranparent_dark">#95FFFFFF</color>
+    <color name="black_tranparent">#80000000</color>
+    <color name="blue">#06C0FF</color>
+    <color name="login">#D8215852</color>
+    <color name="yellow">#FFFF01</color>
+    <color name="yellowdrwaerline">#60FFFF01</color>
+    <color name="yellowtrans">#30FFFF01</color>
+    <color name="status_color">#013C48</color>
+    <color name="car_bg">#CCEEF7</color>
+    <color name="drawer">#805C8085</color>
+    <color name="drawerdark">#90396870</color>
+    <color name="blue_transparent">#8006C0FF</color>
+    <color name="blue_transparenttttt">#4006C0FF</color>
+    <color name="profile_delete_ac">#7D7D7D</color>
+    <color name="profile_update">#0A3A4E</color>
+    <color name="Payment_yellow">#FFFE32</color>
+    <color name="Payment_green">#019E0F</color>
+    <color name="otherbuton">#0A3A4E</color>
+    <color name="backgroundgrey">#E4ECEE</color>
+    <color name="bluedarkbackground">#749292</color>
+    <color name="driverlist">#E4ECEE</color>
+    <color name="carclickcolor">#09c0f4</color>
+    <color name="Notification">#CEDADC</color>
+    <color name="bg">#E4ECEE</color>
+    <color name="gray">#d9d9d9</color>
+    
+    
+    
+    
+    
+   <!-- =========================Taxi App====================================-->
+    
+    
+    
+    <color name="Yellow_header">#ffc107</color>
+    <color name="dark_text">#353b3e</color>
+    <color name="light_text">#828282</color>
+    <color name="divider">#acacac</color>
+    <color name="button_color">#363f45</color>
+    <color name="dark_divider">#363f45</color>
+    <color name="bg_color">#E4ECEE</color>
+    <color name="reason_color">#E6EAEB</color>
+    <color name="reason_color1">#F3F4F6</color>
+
+
+
+</resources>

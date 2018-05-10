@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10dp"
+    android:layout_marginRight="@dimen/_10dp"
+    android:layout_marginTop="@dimen/_7dp"
+    android:layout_marginBottom="@dimen/_5dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="@dimen/_10dp">
+<RelativeLayout
+    android:id="@+id/driverlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/driverimg"
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:src="@drawable/personal" />
+
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/driverimg"
+                android:numStars="5"
+                android:stepSize="1"
+                android:theme="@style/RatingBar" />
+
+            <com.taxibookingrider.Controller.Tahoma
+                android:id="@+id/drivername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/driverimg"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:text="@string/Driver"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_13_sp" />
+
+
+
+
+            <com.taxibookingrider.Controller.Tahoma
+                android:id="@+id/carmodel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drivername"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_toRightOf="@+id/driverimg"
+                android:text="@string/Car_Model"
+                android:textColor="@color/light_text"
+                android:textSize="@dimen/_13_sp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_10dp">
+
+                <LinearLayout
+                    android:id="@+id/lin_total_far"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_20dp"
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:id="@+id/img_fare"
+                    android:src="@drawable/fare"/>
+
+                <com.taxibookingrider.Controller.Tahoma
+                    android:id="@+id/totaleta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:layout_toRightOf="@+id/img_fare"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:text=""
+                    android:textColor="@color/light_text"
+                    android:textSize="@dimen/_13_sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/lin_total_far"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_20dp"
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_below="@+id/img_fare"
+                    android:layout_height="@dimen/_25dp"
+                    android:id="@+id/img_Eta"
+                    android:src="@drawable/eta"/>
+
+                <com.taxibookingrider.Controller.Tahoma
+                    android:id="@+id/fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:text=""
+                    android:textColor="@color/light_text"
+                    android:textSize="@dimen/_13_sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

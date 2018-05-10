@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--  The property id associated with this analytics tracker -->
+    <string name="ga_trackingId">UA-117326112-1</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!--
+      See Project Structure -> Analytics -> Google Analytics -> Learn More
+      to learn more about configuring this file.
+    -->
+
+    <screenName name="com.taxibookingrider.Activity.Change_password_for_newuser">Change_password_for_newuser</screenName>
+    <screenName name="com.taxibookingrider.Activity.ChangePasswordOTPscreen">ChangePasswordOTPscreen</screenName>
+    <screenName name="com.taxibookingrider.Activity.Chat_Activity">Chat_Activity</screenName>
+    <screenName name="com.taxibookingrider.Activity.Current_tripDemo">Current_tripDemo</screenName>
+    <screenName name="com.taxibookingrider.Activity.Dashboard">Dashboard</screenName>
+    <screenName name="com.taxibookingrider.Activity.DriverList">DriverList</screenName>
+    <screenName name="com.taxibookingrider.Activity.DriverListDemo">DriverListDemo</screenName>
+    <screenName name="com.taxibookingrider.Activity.First_Screen">First_Screen</screenName>
+    <screenName name="com.taxibookingrider.Activity.InsertMapsActivity">InsertMapsActivity</screenName>
+    <screenName name="com.taxibookingrider.Activity.LiveTripActivity">LiveTripActivity</screenName>
+    <screenName name="com.taxibookingrider.Activity.OTPscreen">OTPscreen</screenName>
+    <screenName name="com.taxibookingrider.Activity.Password">Password</screenName>
+    <screenName name="com.taxibookingrider.Activity.Payment">Payment</screenName>
+    <screenName name="com.taxibookingrider.Activity.Profile">Profile</screenName>
+    <screenName name="com.taxibookingrider.Activity.Reason_Current_trip">Reason_Current_trip</screenName>
+    <screenName name="com.taxibookingrider.Activity.Registration">Registration</screenName>
+    <screenName name="com.taxibookingrider.Activity.Reset_Password">Reset_Password</screenName>
+    <screenName name="com.taxibookingrider.Activity.ResetPasswordOTPscreen">ResetPasswordOTPscreen</screenName>
+    <screenName name="com.taxibookingrider.Activity.Ride_rating">Ride_rating</screenName>
+    <screenName name="com.taxibookingrider.Activity.Splash">Splash</screenName>
+    <screenName name="com.taxibookingrider.Activity.Trip_Detail">Trip_Detail</screenName>
+    <screenName name="com.taxibookingrider.Activity.UpdateProfileChangeMobileOTPscreen">UpdateProfileChangeMobileOTPscreen</screenName>
+    <screenName name="com.taxibookingrider.Activity.ChangePasswordUpdateprofileold">ChangePasswordUpdateprofileold</screenName>
+    <screenName name="com.taxibookingrider.Activity.EnterPasswordUpdateprofile">EnterPasswordUpdateprofile</screenName>
+
+    <screenName name="com.taxibookingrider.Fragment.Fare">Fare</screenName>
+    <screenName name="com.taxibookingrider.Fragment.Favourite_location">Favourite_location</screenName>
+    <screenName name="com.taxibookingrider.Fragment.Home">Home</screenName>
+    <screenName name="com.taxibookingrider.Fragment.Legal">Legal</screenName>
+    <screenName name="com.taxibookingrider.Fragment.MessageData">MessageData</screenName>
+    <screenName name="com.taxibookingrider.Fragment.Pay_with_card">Pay_with_card</screenName>
+    <screenName name="com.taxibookingrider.Fragment.Select_Location">Select_Location</screenName>
+    <screenName name="com.taxibookingrider.Fragment.Your_trip">Your_trip</screenName>
+
+
+
+
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="@dimen/_7dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_tranparent_dark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:orientation="horizontal">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editCard_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/Black"
+                        android:hint="@string/Card_Number"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:paddingRight="@dimen/_5dp"
+                        android:gravity="right"
+                        android:textSize="@dimen/_15_sp"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/Black"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editCard_cvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/Black"
+                        android:hint="@string/CVV"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:paddingRight="@dimen/_5dp"
+                        android:gravity="right"
+                        android:textSize="@dimen/_15_sp"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/Black"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_card_expridate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editCard_experidate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/Black"
+                        android:hint="@string/Expire_Date"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:paddingRight="@dimen/_5dp"
+                        android:gravity="right"
+                        android:textSize="@dimen/_15_sp"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/Black"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:src="@drawable/calder_yellow" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rr_cancel_ride"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:elevation="@dimen/_10dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_10dp">
+
+            <com.taxibookingrider.Controller.Tahoma
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/Submit"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_15_sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

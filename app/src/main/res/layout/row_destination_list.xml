@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp">
+
+        <ImageView
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_7dp"
+            android:src="@drawable/searchlocation" />
+
+
+
+        <com.taxibookingrider.Controller.Tahoma
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/address"
+            android:paddingLeft="@dimen/_5dp"
+            android:text="@string/Paldi_Ahmedabad"
+            android:textColor="@color/dark_text"
+            android:textSize="@dimen/_15_sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:background="@color/light_text" />
+
+</LinearLayout>

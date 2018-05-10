@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="@drawable/rectanglerounded"
+    android:padding="20dp">
+
+    <NumberPicker
+        android:id="@+id/numberPicker1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:scaleX="1.2"
+        android:scaleY="1.2" />
+
+    <RelativeLayout
+        android:id="@+id/llButtonAcceptedAndRejected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:id="@+id/next"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_below="@+id/edit22"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:elevation="@dimen/_10dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+
+            <com.taxibookingrider.Controller.Tahoma
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_15_sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edit22"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:elevation="@dimen/_10dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+
+            <com.taxibookingrider.Controller.Tahoma
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/Cancel"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_15_sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/wholelinear"
+    android:orientation="vertical">
+
+
+    <com.taxibookingrider.Controller.Tahoma
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reason"
+        android:gravity="right"
+        android:padding="@dimen/_10dp"
+        android:text=""
+        android:textColor="@color/dark_text"
+        android:textSize="@dimen/_15_sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:background="@color/light_text" />
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/appdrawerdriverlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_56dp"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="@dimen/_5dp">
+
+                        <ImageView
+                            android:id="@+id/notify_bar"
+                            android:layout_width="@dimen/_70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_15dp"
+                            android:src="@drawable/back1"
+                            android:visibility="gone" />
+
+                        <com.taxibookingrider.Controller.Tahoma
+                            android:id="@+id/headertext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:layout_toRightOf="@+id/notify_bar"
+                            android:text="@string/Start_Trip"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/_18_sp" />
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_15dp"
+                            android:src="@drawable/top_logo" />
+
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.Toolbar>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appdrawerdriverlist"
+        app:cardElevation="@dimen/_7dp">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:minHeight="?attr/actionBarSize"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/Yellow_header"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/dark_text"
+            app:tabTextColor="@color/light_text"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"/>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/card_pay"
+        android:layout_below="@id/card_tab" />
+
+
+
+
+
+</RelativeLayout>

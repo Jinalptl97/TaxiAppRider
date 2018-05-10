@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/sortlayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:layout_margin="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@color/White">
+
+                <com.taxibookingrider.Controller.TahomaItalic
+                    android:id="@+id/sortbyname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10_sp"
+                    android:text="@string/Sort_By_Price"
+                    android:textColor="@color/bluedarkbackground"
+                    android:textSize="@dimen/_20dp" />
+
+
+                <ImageView
+                    android:id="@+id/popup"
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10_sp"
+                    android:src="@drawable/popup"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/popupclose"
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10_sp"
+                    android:rotation="+270"
+                    android:src="@drawable/popup" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recyclerlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sortlayout"
+                android:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/sortlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_margin="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/White">
+
+            <com.taxibookingrider.Controller.TahomaItalic
+                android:id="@+id/sortbyname2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10_sp"
+                android:text="@string/Sort_By_Rating"
+                android:textColor="@color/bluedarkbackground"
+                android:textSize="@dimen/_20dp" />
+
+
+            <ImageView
+                android:id="@+id/popup2"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10_sp"
+                android:src="@drawable/popup"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/popupclose2"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10_sp"
+                android:rotation="+270"
+                android:src="@drawable/popup" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recyclerlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sortlayout"
+            android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/sortlayout3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_margin="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/White">
+
+            <com.taxibookingrider.Controller.TahomaItalic
+                android:id="@+id/sortbyname3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10_sp"
+                android:text="Sort By ETA"
+                android:textColor="@color/bluedarkbackground"
+                android:textSize="@dimen/_20dp" />
+
+
+            <ImageView
+                android:id="@+id/popup3"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10_sp"
+                android:src="@drawable/popup"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/popupclose3"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10_sp"
+                android:rotation="+270"
+                android:src="@drawable/popup" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/recyclerlayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sortlayout"
+            android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/registrationbg">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.Login_Activty">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/logolayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/_170dp"
+                    android:layout_height="@dimen/_120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/registration_car" />
+
+
+                <com.taxibookingrider.Controller.Tahoma
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/Registration"
+                    android:textColor="@color/dark_text"
+                    android:textSize="@dimen/_18_sp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_30dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edfirstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/Black"
+                        android:hint="@string/First_Name"
+                        android:maxLength="50"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/_5dp"
+                        android:paddingTop="@dimen/_3dp"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_text"
+                        android:textColorHint="@color/dark_text"
+                        android:textSize="@dimen/_15_sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:src="@drawable/firstname" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edlastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/Black"
+                    android:hint="@string/Last_Name"
+                    android:maxLength="50"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/_5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_text"
+                    android:textColorHint="@color/dark_text"
+                    android:textSize="@dimen/_15_sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:src="@drawable/firstname" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lin_1">
+
+
+
+                    <com.taxibookingrider.Controller.Tahoma
+                        android:id="@+id/mobilenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="@string/MobileNumber"
+                        android:paddingLeft="@dimen/_5dp"
+                        android:editable="false"
+                        android:textColor="@color/dark_text"
+                        android:textSize="@dimen/_15_sp" />
+
+
+
+
+                </RelativeLayout>
+
+                <view
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/Black"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:layout_below="@+id/lin_1"></view>
+
+
+                <ImageView
+                    android:layout_width="@dimen/_30dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:src="@drawable/phone" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edemailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/Email_Id"
+                    android:backgroundTint="@color/Black"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/_5dp"
+                    android:scrollIndicators="none"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_text"
+                    android:textColorHint="@color/dark_text"
+                    android:textSize="@dimen/_15_sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:src="@drawable/mail" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/password"
+                    android:backgroundTint="@color/Black"
+                    android:inputType="textPassword"
+                    android:maxLength="8"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/_5dp"
+                    android:textColor="@color/dark_text"
+                    android:textColorHint="@color/dark_text"
+                    android:textSize="@dimen/_15_sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:src="@drawable/password" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout5"
+                android:layout_marginLeft="@dimen/_50dp">
+
+
+                <com.taxibookingrider.Controller.Tahoma
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/enter_character"
+                    android:textColor="@color/dark_text"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_below="@+id/layout4"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_25dp"
+                android:layout_marginRight="@dimen/_25dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:focusable="true"
+                android:elevation="@dimen/_3dp"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true">
+
+                <com.taxibookingrider.Controller.Tahoma
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/Submit"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_18_sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/loginlayout"
+                android:layout_marginTop="@dimen/_10dp"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/_15dp">
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

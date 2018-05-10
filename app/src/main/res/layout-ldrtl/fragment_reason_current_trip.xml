@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:ignore="ScrollViewCount">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/appdrawerdriverlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60dp"
+                android:background="@android:color/transparent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Yellow_header">
+
+                    </android.support.v7.widget.Toolbar>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/notify_bar"
+                            android:layout_width="@dimen/_45dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="@dimen/_15dp"
+                            android:rotation="180"
+                            android:paddingRight="@dimen/_15dp"
+                            android:src="@drawable/back1" />
+
+                        <com.taxibookingrider.Controller.Tahoma
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toLeftOf="@+id/notify_bar"
+                            android:text="@string/current_trip"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/_18_sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/_15dp"
+                            android:scaleX="-1"
+                            android:src="@drawable/top_logo" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+        </RelativeLayout>
+
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/White"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="@dimen/_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/choosedialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+
+            android:background="@color/Yellow_header">
+
+            <com.taxibookingrider.Controller.Tahoma
+                android:id="@+id/chooselocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10dp"
+                android:text="@string/Reason"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/_18_sp" />
+
+
+            <ImageView
+                android:id="@+id/popup"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:src="@drawable/down_arrow_dark" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_des_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choosedialog"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:background="@color/white_tranparent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/reason_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/White"
+            android:layout_marginTop="@dimen/_30dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="@dimen/_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/reason_color">
+
+                <com.taxibookingrider.Controller.Tahoma
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_15dp"
+                    android:paddingTop="@dimen/_15dp"
+                    android:paddingRight="@dimen/_10dp"
+                    android:text="@string/RiderAmountwillbeDebited"
+                    android:textColor="@color/dark_text"
+                    android:textSize="@dimen/_13_sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@color/reason_color1">
+
+
+                <com.taxibookingrider.Controller.TahomaBold
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="444"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/dark_text"
+                    android:textSize="@dimen/_15_sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/submitcancelrequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:elevation="@dimen/_10dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+
+            <com.taxibookingrider.Controller.Tahoma
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_10dp"
+                android:text="@string/Submit"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_18_sp" />
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+</ScrollView>
